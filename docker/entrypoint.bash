@@ -1,3 +1,6 @@
-#!/bin/bash
+#!/bin/bash -e
 
-echo name=output::"$(cabal-fmt --inplace --no-tabular)" >> $GITHUB_OUTPUT
+for path in $(ls -d *.cabal)
+do
+  cabal-fmt --inplace --no-tabular $path
+done
