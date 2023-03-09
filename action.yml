@@ -6,3 +6,4 @@ outputs:
     description: Command output
 runs:
   using: docker
+  image: docker://ghcr.io/nikita-volkov/cabal-fmt.github-action:530598b6e091433e8df8abf23ea6d133e7be22b8
