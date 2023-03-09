@@ -3,4 +3,4 @@ description: Quickly format the cabal file using cabal-fmt
 author: Nikita Volkov
 runs:
   using: docker
-  image: docker://ghcr.io/nikita-volkov/cabal-fmt.github-action:530598b6e091433e8df8abf23ea6d133e7be22b8
+  image: docker://ghcr.io/nikita-volkov/cabal-fmt.github-action:16812d3dd1ccab556c8504fecf6571dc4a4894b2
