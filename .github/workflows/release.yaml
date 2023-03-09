@@ -59,3 +59,11 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit: ${{ github.ref_name }}
           tag: ${{ steps.tag.outputs.new_tag }}
+
+      - name: Merge to master
+        uses: devmasx/merge-branch@1.4.0
+        with:
+          type: now
+          from_branch: ${{ github.ref_name }}
+          target_branch: master
+          github_token: ${{ github.token }}
