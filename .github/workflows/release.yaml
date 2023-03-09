@@ -30,7 +30,7 @@ jobs:
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
 
       - name: Update action.yml
-        uses: fjogeleit/yaml-update-action@v0.10.0
+        uses: fjogeleit/yaml-update-action@v0.12.3
         with:
           valueFile: action.yml
           propertyPath: runs.image
