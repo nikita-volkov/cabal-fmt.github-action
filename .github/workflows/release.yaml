@@ -54,7 +54,7 @@ jobs:
           commit_sha: ${{ steps.update-image-ref.outputs.commit_hash }}
 
       - name: Release
-        uses: ncipollo/release-action@v1.10.0
+        uses: ncipollo/release-action@v1.12.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit: ${{ github.ref_name }}
