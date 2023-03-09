@@ -1,0 +1,8 @@
+name: Execute cabal-fmt
+description: Quickly format the cabal file
+author: Nikita Volkov
+outputs:
+  output:
+    description: Command output
+runs:
+  using: docker
